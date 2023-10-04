@@ -2,6 +2,9 @@
 body {
     max-width: 100%;
     background-color:white ;
+    background-image: url(analysis-2030265\ \(1\).jpg);
+    background-size: cover;
+  
     
 
 }
@@ -108,7 +111,7 @@ a {
     grid-template-columns: repeat(2, 1fr );
     gap: 2rem;
     margin: auto;
-    background-image:linear-gradient(to right,  rgb(135, 206, 235, 0.7) , rgba(248,255,221, .7) ) ;
+      
     
 }
 .grid-2 article {
@@ -117,6 +120,7 @@ a {
     display: grid;
     align-content: center;
     justify-content: center;
+
 }
 .grid-2 article:first-child {
     max-width: 80%;
@@ -127,14 +131,14 @@ a {
 .grid-2 article h1 {
     font-family: "lora";
     font-size: 1.6rem;
-    color: brown;
+    color: sk;
     font-weight: bolder;
     padding: 0 2rem;
 }
 .grid-2 article h2 {
     font-family: "lora";
     font-size: 1.7rem;
-    color: #eeb046;
+    color: white;
     padding: 0 2rem;
 }
 .grid-2 article h3 {
