@@ -2,7 +2,7 @@
 body {
     max-width: 100%;
     background-color:white ;
-    background-image: url(background-video.mp4s);
+    background-image: url(analysis-2030265\ \(1\).jpg);
     background-size: cover;
   
     
@@ -37,7 +37,7 @@ a {
 }
 
 .background-video{
-    box-shadow: 0rem 1rem 1.5rem rgba(0,0,0,.7);
+    box-shadow: 0rem 1rem 4rem rgba(0,0,0,.7);
 }
 .header-div-text {
     font-size: 1.6rem;
