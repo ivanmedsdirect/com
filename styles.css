@@ -4,9 +4,6 @@ body {
     background-color:white ;
     background-image: url(analysis-2030265\ \(1\).jpg);
     background-size: cover;
-  
-    
-
 }
 html {
     scroll-behavior: smooth;
@@ -942,6 +939,9 @@ footer section{
     padding: 0;
     margin: 0;
 }
+.footer-buttom{
+    background-color: white;
+}
 
 @media screen and (max-width: 600px) {
     footer section {
@@ -1022,10 +1022,14 @@ footer section{
     background-color: skyblue;
     border-radius: 1rem;
     text-transform: uppercase;
+    margin-top: 2rem;
 
    }
    .repair-header{
     margin-top: 3rem;
+   }
+   .signup-form input{
+    width: 100%;
    }
 
 }
