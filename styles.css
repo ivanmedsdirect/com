@@ -78,10 +78,17 @@ a {
     
 }
 
+.centered{
+    display: inline-block;
+    text-align: center;
+}
+.links:hover{
+    color: blue;
+}
    
 .header-nav-ul li:hover{
     
-    color: brown;
+    color: blue;
    
 }
 .header-button{
