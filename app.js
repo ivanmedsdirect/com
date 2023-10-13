@@ -41,9 +41,9 @@ const navs = document.querySelectorAll (".nav")
 
 } )
 
-
+/*
 window.addEventListener("DOMContentLoaded", function(){
-    const equipmentPicturesContainers = querySelectorAll(".eqipment-pictures-container")   
+    const equipmentPicturesContainers = querySelectorAll(".equipment-pictures-container")   
     equipmentPicturesContainers.forEach( function(equipmentPicturesContainer){
         const equipmentParag = equipmentPicturesContainer.querySelector(".equipment-pictures-p");
         const equipmentPics = equipmentPicturesContainer.querySelector(".equipment-img");
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function(){
    
     equipmentParag.innerHTML=    equipmentPicsAlt;
 })
-
+*/
 const servicesSublists = document.querySelectorAll(".services-sublist");
 
 servicesSublists.forEach(function(servicesSublist){
@@ -84,3 +84,26 @@ const navToggle = document.querySelector(".nav-toggle");
 navToggle.addEventListener("click", function() {
     linksContainer.classList.toggle("show-nav");
 })
+
+function sendEmail() {
+    var params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("mail").value,
+    }
+
+   
+
+    const serviceID = "service_6hoj3c4";
+    const templateID = "template_ohci5ic";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(
+        res =>{
+            document.getElementById("name").value= "";
+            document.getElementById("mail").value= "";
+            console.log(res);
+            document.getElementById("signupmessage").innerHTML = "Hi, You are welcome, Henceforth you will receive email updates from the team!!!"  ;
+        }  
+    )
+    .catch(err => console.log(err));  
+}
