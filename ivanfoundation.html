@@ -118,31 +118,38 @@
 
     <section class="grid-111">
         <div class="box">
-            <h1 class="header-div-text get-care header-padding">
-               GET CARE
-              </h1>
-              <p class="para centerp " style="font-weight: bolder;">
-               Text Or Send An Email To Find Location Near You To Get Care And Support!!!
-              </p>
-
+            <a href=" https://wa.me/16034132511?text= Hello There IvanMeds Direct, I am at (city, state) and I need to get care">
+                <h1 class="header-div-text get-care header-padding">
+                    GET CARE
+                   </h1>
+                   <p class="para centerp " style="font-weight: bolder;">
+                    Text Or Send An Email To Find Location Near You To Get Care And Support!!!
+                   </p>
+            </a>
         </div>
 
         <div class="box">
-            <h1 class="header-div-text get-care header-padding">
-                GET INVOLVED
-               </h1>
-               <p class="para centerp" style="font-weight: bolder;">
-                Text Or Drop An Email To Learn More About Ways To Give, To Volunteer And More!!!
-               </p>
+            <a href="https://wa.me/16034132511?text= Hello There IvanMeds Direct, I am at (city, state) and I want to get involved ">
+                <h1 class="header-div-text get-care header-padding">
+                    GET INVOLVED
+                   </h1>
+                   <p class="para centerp" style="font-weight: bolder;">
+                    Text Or Send An Email To Learn More About Ways To Give, To Volunteer And More!!!
+                   </p>
+            </a>
+         
         </div>
         
         <div class="box">
-            <h1 class="header-div-text get-care header-padding">
-                DONATE
-               </h1>
-               <p class="para centerp"  style="font-weight: bolder;" >
-                 Text Or Drop An Email To Donate And Support The Foundation To Move Forward!!!
-               </p>
+            <a href="https://wa.me/16034132511?text= Hello There IvanMeds Direct, How Do I Make Donations To Support">
+                <h1 class="header-div-text get-care header-padding">
+                    DONATE
+                   </h1>
+                   <p class="para centerp"  style="font-weight: bolder;" >
+                     Text Or Send An Email To Donate And Support The Foundation Take A Step Ahead!!!
+                   </p>
+            </a>
+          
         </div>
     </section>
 
@@ -202,17 +209,17 @@
                     <h3 class="para">The Ivan Med's Tax ID is 56-2273242</h3>
                     <p class="para bold">Want to be updated?</p>
                     <p class="para"> Sign up to receive email updates from the Ivan Med Team!</p>
-                     <form class="signup-form" action="">
+                     <form class="signup-form"  onsubmit="sendEmail(); reset(); return false;">
                         <label for="name"> Your Name</label>
                         <input required id="name" type="text">
                         <label for="mail"> Your Email </label>
                         <input required id="mail" type="email">
-                        <button class="signup" type="submit">SIGN UP</button>
+                        <button  class="signup" type="submit">SIGN UP</button>
                      </form>
     
                      
     
-                     <p class="signup-message"> </p>
+                     <p style="color: dodgerblue;" class="signup-message" id="signupmessage"> </p>
                 </div>
             </div>
             <div id="contact">
@@ -287,10 +294,17 @@
         
        
     </div>
-
-    <a class="top-link " href="ivanfoundation.html">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+        <a class="top-link" href="index.html">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     <script src="app.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("AiUk5bdpacLdDwScf");
+       })();
+    </script>
 </body>
 </html>

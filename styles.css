@@ -321,6 +321,7 @@ span {
     margin: auto;
 }
 .equipment-button{
+    color: dodgerblue;
     margin-top: 4rem ;
     font-size: 0.9375rem;
     font-weight: 700;
@@ -402,12 +403,15 @@ span {
     margin: auto;
     gap: 5rem ;
 }
+.inline-block{
+    display: inline-block;
+    text-align: center;
+}
 .brown-p {
-    color: blue;
+    color: navy;
     font-weight: bolder;
-    text-shadow: brown;
     display: none;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 .show-brown-p{
     display: inline-block;
@@ -868,6 +872,9 @@ span {
     background-image: linear-gradient(to bottom, rgba(248,255,221,0.8), rgb(135, 206, 235, 0.8)), url(care3.png);
     border-radius: 20px;
 }
+.box:hover{
+    box-shadow: 1rem 1.5rem 2rem rgba(0,0,0,.5);
+}
 .box:nth-child(2){
     background-image: linear-gradient(to bottom, rgba(248,255,221,0.8), rgb(135, 206, 235, 0.8)), url(care2.jpg);
 }
@@ -1122,7 +1129,7 @@ footer section{
     50%{
         transform: skewX(1.5deg);
         transform: scale(1.09);
-        color: blue;
+        color: navy;
     }
     100%{
         transform: scale(1);
