@@ -4,6 +4,7 @@ body {
     background-color:white ;
     background-image: url(analysis-2030265\ \(1\).jpg);
     background-size: cover;
+    margin: auto;
 }
 html {
     scroll-behavior: smooth;
